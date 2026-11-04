@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ko">
+<body>
+  <p>{{ order.customer_name }} 님, 주문이 접수되었습니다.</p>
+  <p>주문 번호: {{ order.id }}</p>
+  <table>
+    <tr><th>상품</th><th>수량</th><th>금액</th></tr>
+    {% for item in order.items %}
+    <tr><td>{{ item.sku }}</td><td>{{ item.quantity }}</td><td>{{ (item.unit_price * item.quantity) | won }}</td></tr>
+    {% endfor %}
+  </table>
+  <p>합계: {{ order.total | won }}</p>
+</body>
+</html>

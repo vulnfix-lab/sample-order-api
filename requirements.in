@@ -1,0 +1,6 @@
+# 운영 직접 의존성. lock 은 pip-compile 로 requirements.txt 에 만든다.
+fastapi==0.100.0
+uvicorn
+jinja2==3.1.2
+urllib3==1.26.15
+python-jose==3.3.0
