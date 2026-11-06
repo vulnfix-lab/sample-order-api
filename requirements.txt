@@ -18,7 +18,7 @@ h11==0.16.0
     # via uvicorn
 idna==3.20
     # via anyio
-jinja2==3.1.2
+jinja2==3.1.6
     # via -r requirements.in
 markupsafe==3.0.4
     # via jinja2
